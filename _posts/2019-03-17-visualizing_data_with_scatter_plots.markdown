@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Visualizing Data with Scatter Plots"
-date:       2019-03-18 00:36:05 +0000
+date:       2019-03-17 20:36:06 -0400
 permalink:  visualizing_data_with_scatter_plots
 ---
 
@@ -22,7 +22,7 @@ The direction of the relationship between the variables can be either positive o
 
 The shape of the relationship and be determined by inspecting the pattern of the distribution of the markers. If the markers cluster in such a way that they begin to resemble a line, the relationship can be described as linear. A linear relationship between two variables indicates that the variables change at roughly the same rate. If the markers cluster in such a way that they begin to resemble a curve, the relationship can be described as curvilinear. A curvilinear relationship between two variables indicates that one of the variables does not change at a constant rate.
 
-A formal assessment of the strength of a relationship between two variables requires some math to calculate the correlation coefficient, but a crude assessment can be accomplished by visually inspecting how tightly the markers cluster around their relational shape (i.e. linear or curvilinear). The tighter th``e markers conform to the relational shape, the stronger the relationship.
+A formal assessment of the strength of a relationship between two variables requires some math to calculate the correlation coefficient, but a crude assessment can be accomplished by visually inspecting how tightly the markers cluster around their relational shape (i.e. linear or curvilinear). The tighter the markers conform to the relational shape, the stronger the relationship.
 
 **Basic Scatter Plot**
 
