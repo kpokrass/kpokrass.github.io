@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Stacked Generalization"
-date:       2019-06-12 14:09:51 +0000
+date:       2019-06-12 10:09:52 -0400
 permalink:  stacked_generalization
 ---
 
@@ -12,7 +12,7 @@ One of the most influential papers in the field of data science was published in
 
 ## How Stacked Generalization Works
 
-![Basic stacked generalization schema](https://github.com/kpokrass/dsc-3-final-project-online-ds-ft-021119/blob/master/stacked_schema.png)
+![Basic stacked generalization schema](https://raw.githubusercontent.com/kpokrass/dsc-3-final-project-online-ds-ft-021119/master/stacked_schema.png)
 
 The basic schema of stacked generalization can be thought of as multiple levels of generalizers. Essentially, the data (a learning set of dimension (j,k)) is fed to n number of first-level generalizers. These first-level generalizers each make a prediction on the data to produce second-level data of dimension (j,n). This second-level data is then presented to the second-level generalizer, which produces the final predictions for the dataset. Of course, this schema could also be extended to more than two levels of generalizers if required by the particular problem being solved.
 
