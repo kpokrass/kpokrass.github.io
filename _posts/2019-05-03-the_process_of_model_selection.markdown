@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "The Process of Model Selection"
-date:       2019-05-03 16:12:08 +0000
+date:       2019-05-03 12:12:09 -0400
 permalink:  the_process_of_model_selection
 ---
 
@@ -18,39 +18,13 @@ Now that the construction worker analogy has built the foundation (pun intended)
 
 The first two questions a data scientist must be able to answer before beginning the modeling process are: What type of problem am I trying to solve? and What type of problem can I solve, based on the data? Firmly understanding the problem and the data is the quickest way to narrow down what class of models might work best. If labels are present within the dataset (i.e. known outcomes based on the values of the features in the data set), supervised learning models, such as regression or classification, may be the best approach to take. If the dataset does not include labels for the target, unsupervised learning models, such as clustering, should be considered. The table below provides a basic outline for deciding what family of models to use based on what type of problem you are trying to solve and what your data looks like.
 
+<img src="https://raw.githubusercontent.com/kpokrass/blog_images/master/model_table.png" width="870" height="500" >
 
+(1) https://towardsdatascience.com/5-types-of-regression-and-their-properties-c5e1fa12d55e
 
+(2) https://medium.com/@Mandysidana/machine-learning-types-of-classification-9497bd4f2e14
 
-
-
-| Model Class            | Use Cases                                            | Strengths/Weaknesses                                   | Examples                              |
-| -------------------- | ------------------------------------ | ---------------------------------------------- | --------------------------- |
-|                                      | Predicting a single,                           | **Strengths:** relatively simple to               | Linear Regreesion            |
-|                                      | continuous dependent                    | perform and understand. Performs           |                                                   |
-|                                      | variable from a single, or                 | well on unseen data.                                         | Multilinear Regression     |
-|                                      | multiple, independent                      |                                                                                   |                                                   |
-|   **Regression**   | variable(s).                                             |**Weaknessnes:** dependent variable    | Regression trees (a.k.a.   |
-|                                      |                                                                   | must be continuous. The risk of                  | recursive partitioning)      |
-|                                      | Determine the relationship/           | overfitting increases as the number         |                                                    |
-|                                      | influence of the independent        | of features increases.                                      |                                                   |
-|                                      | variable(s) to/on the dependent   |                                                                                   |                                                   |
-|                                      | variable.                                                 |                                                                                    |                                                  |
-| -------------------- | ------------------------------------ | ---------------------------------------------- | --------------------------- |
-|                                      |                                                                   | **Strengths:** flexible in terms of data      | Decision trees                   |
-|                                      |                                                                   | form and underlying relationships.               |                                                 |
-|                                      |  Determine which of a set of          | Robust to outliers.                                               | Logistic regression         |
-| **Classification**| categories a data point belongs   |                                                                                      |                                               |
-|                                      | to.                                                              | **Weaknesses:** may be computationally| Support Vector               |
-|                                      |                                                                   | expensive. Prone to overfitting.                      | Machines                            |
-|                                      |                                                                    |                                                                                     |                                                |
-| -------------------- | ------------------------------------- | ---------------------------------------------- | -------------------------- |
-|                                      | Identify the natural grouping of     | **Strengths:** usually fast and relatively  | K-Means                             |
-|                                      | data points based on inherent       | simple.                                                                     |                                                |
-|                                      | trends and influences.                      |                                                                                      | Hierarchical Clustering|
-| **Clustering**       |                                                                     | **Weaknesses:** poor performance and |                                               |
-|                                      | Mainly used for exploratory            | impossible to visualize at higher                     | DBSCSN                            |
-|                                      | purposes.                                               | dimensions. Sensitive to initialization           |                                               |
-|                                      |                                                                     | phase, noise, and outliers.                                 |                                              |
+(3) https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68
 
 
 ### Model Tuning
