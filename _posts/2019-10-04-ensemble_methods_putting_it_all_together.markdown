@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Ensemble Methods: Putting it All Together"
-date:       2019-10-04 20:23:32 +0000
+date:       2019-10-04 16:23:33 -0400
 permalink:  ensemble_methods_putting_it_all_together
 ---
 
@@ -39,6 +39,11 @@ The short answer; two heads are better than one, teamwork makes the dream work, 
 
 XGBoost (Extreme Gradient Boosting) is an ensemble method that utilizes decision trees and gradient boosting. Its algorithm has optimized the computationally expensive gradient boosting process through parallelization and automatically employs regularization techniques such as lasso, ridge, and tree pruning to avoid overfitting. It can even determine the best value to impute for sparse data based on training loss measures.  
 
+<p align='center'>
+<img src="https://raw.githubusercontent.com/kpokrass/blog_images/master/xgboost_test.png" width=750>
+</p>
+
+The graphs display the training and testing scores for several machine learning models along with the amount of training time on a binary classification task. SciKit Learn’s make_classification function was used to generate 75,000 instances belonging to two classes with 20 features and noise factor (flip_y) of 0.3. The four ensemble methods (XGBoost, Gradient Boosting, AdaBoost, and Random Forest) all yield similar performance scores and clearly outperform the one stand-alone model (Decision Tree). However, Random Forest displays evidence of significant overfitting (training scores greater than testing scores), while the other three ensemble methods do not. Additionally, XGBoost has the fastest training time out of the three boosting algorithms (XGBoost, AdaBoost, Gradient Boosting). The results from this test demonstrate that while XGBoost’s internal regularization processes slow down training time from Random Forest, the performance gains in terms of AUC and resistance to overfitting more than compensate.
 ## Summary/Conclusion
 
 This post covered the major concepts underlying ensemble methods and how these concepts affect performance. Ensemble methods are machine learning algorithms that employ multiple models to make a prediction and generally outperform most stand-alone models. While there is no magic bullet that works for all use cases, XGBoost is the consensus best-in-class ensemble method as of the writing of this post and has won so many Kaggle competitions that it has become a running joke within the community. However, other algorithms such as CatBoost have been showing performance in the same ballpark as XGBoost and may be a strong challenger for the title in the near future.
