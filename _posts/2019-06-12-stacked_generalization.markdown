@@ -6,8 +6,6 @@ permalink:  stacked_generalization
 ---
 
 
-## Introduction
-
 One of the most influential papers in the field of data science was published in 1992 by David H. Wolpert concerning the novel technique of “stacked generalization.”  Informally known as “model stacking,” this was proposed as a strategy to “reduce the generalization error rate of a generalizer.” To understand this in layman’s terms, we need to define what a generalizer is and what the generalization error rate is. First, a generalizer is a mathematical function that describes a population from a subsample of that population. Essentially, it uses the subsample to describe (i.e. generalize) the characteristics of the total population. For any subsample that is smaller than the total population, it is reasonable to assume that there will be some part of the total population that the generalizer does not describe well. This inability of the generalizer to describe some portion of the total population is what Wolpert is referring to with the term “generalization error rate.” Thus, his stacked generalization technique can be used to increase how well the mathematical function describes the total population.
 
 ## How Stacked Generalization Works
