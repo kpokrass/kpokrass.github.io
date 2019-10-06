@@ -1,11 +1,11 @@
 # Site settings
 author: Kate Pokrass
-title: Data Science Experience
+title: Data Science For The Greater Good
 header-img: img/home-bg.png
 email: kpokrass@gmail.com
 copyright_name: Kate Pokrass
 description: > # this means to ignore newlines until "baseurl:"
-  In Progress
+  Connecting the Details to the Big Picture
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  kpokrass
