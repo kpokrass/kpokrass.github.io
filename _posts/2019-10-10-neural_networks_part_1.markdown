@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Neural Networks – Part 1"
-date:       2019-10-10 22:43:56 +0000
+date:       2019-10-10 18:43:57 -0400
 permalink:  neural_networks_part_1
 ---
 
@@ -11,7 +11,7 @@ Neural networks are quickly becoming the go-to algorithm for most machine learni
 The figure below (based on a figure from Coursera's Neural Network Specialization Series) illustrates how the quantity of available data is tied to model performance. The classic machine learning models tend to achieve their best performance measures with significantly less data than the other varying sizes of neural networks, but this performance plateaus at a lower level. As the size of the neural network gets larger, performance increases, but more data is needed to reach the plateau. The largest neural networks need the greatest amount of data to reach their superior performance measures, but this suggests that their performance then requires the greatest amount of time and computational power.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/kpokrass/blog_images/master/NN_performance_curve.png" width=600>
+<img src="https://raw.githubusercontent.com/kpokrass/blog_images/master/NN_performance_curve.png" width="600">
 </p>
 
 Despite their increased usage, neural networks have been categorized as “black box” models because we do not know exactly what is going on behind the scenes or what the network did to arrive at its prediction. We do, however, have a general idea of how the data moves through the network and this will be the focus of this first installment in my Neural Network Series. This post will give a generalized explanation of the structure and concepts underlying how neural networks work.
