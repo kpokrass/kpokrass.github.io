@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Neural Networks – Part 1"
+title:      "Neural Networks – General Overview"
 date:       2019-10-10 18:43:57 -0400
 permalink:  neural_networks_part_1
 ---
