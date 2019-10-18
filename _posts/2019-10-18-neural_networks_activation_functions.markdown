@@ -13,10 +13,10 @@ Despite the numerous applications for neural networks and the allure of their su
 
 There are, however, two main ways a data scientist can assert some influence on how a neural network learns: activation functions and optimizers. The selection of these two aspects should garner considerable thought as they can significantly affect model performance. The focus of this post will be the pros and cons of several activation functions. Various optimizers will be covered in a subsequent post as they pertain more to back propagation.
 
-## [Activation Functions](https://medium.com/@dc.aihub/activation-functions-part-1-the-basics-338e0cc615a6)
+## Activation Functions
 
 
-Activation functions are transfer functions within neural networks that map the output of one node to the input of the next node. When compared to the biological neuron, activation functions can be thought of as action potentials as they propagate the data through the network. There are [many to choose from]( https://dashee87.github.io/deep%20learning/visualising-activation-functions-in-neural-networks/) and often iterating through several candidates is the best method for determining which one will work best. But, because neural networks require large amounts of data, training is both resource and time consuming. Thus, it is essential to understand how each function transforms the data and how its derivative could affect the network’s ability to learn in order to narrow down selection of “best candidates” for any particular task.
+[Activation functions](https://medium.com/@dc.aihub/activation-functions-part-1-the-basics-338e0cc615a6) are transfer functions within neural networks that map the output of one node to the input of the next node. When compared to the biological neuron, activation functions can be thought of as action potentials as they propagate the data through the network. There are [many to choose from]( https://dashee87.github.io/deep%20learning/visualising-activation-functions-in-neural-networks/) and often iterating through several candidates is the best method for determining which one will work best. But, because neural networks require large amounts of data, training is both resource and time consuming. Thus, it is essential to understand how each function transforms the data and how its derivative could affect the network’s ability to learn in order to narrow down selection of “best candidates” for any particular task.
 
 ### Sigmoid
 
@@ -44,35 +44,35 @@ The inverse tangent function attempts to maintain the positives from the tanh fu
 </p>
 
 
-### [Rectified Linear Unit (ReLU)](https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/)
+### Rectified Linear Unit (ReLU)
 
-The rectified linear unit is currently the most popular activation function as it retains the biological motivation of an action potential (node will only “fire” if the input exceeds a threshold) and it typically yields superior results to the three activation functions previously mentioned. It outputs values in the range of zero to infinity as all negative inputs will result in an output of zero and all positive inputs are without bounds along a linear function. The simplicity of this function makes it easy to calculate its derivative, reducing necessary resources and training time, but it can result in neurons that are unable to update their weights and bias values (dead neurons) if their _z_ values are negative.
+The [rectified linear unit](https://machinelearningmastery.com/rectified-linear-activation-function-for-deep-learning-neural-networks/) is currently the most popular activation function as it retains the biological motivation of an action potential (node will only “fire” if the input exceeds a threshold) and it typically yields superior results to the three activation functions previously mentioned. It outputs values in the range of zero to infinity as all negative inputs will result in an output of zero and all positive inputs are without bounds along a linear function. The simplicity of this function makes it easy to calculate its derivative, reducing necessary resources and training time, but it can result in neurons that are unable to update their weights and bias values (dead neurons) if their _z_ values are negative.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/kpokrass/blog_images/master/ReLU.png" width="600">
 </p>
 
 
-### [Leaky Rectified Linear Unit (Leaky ReLU)](https://medium.com/@danqing/a-practical-guide-to-relu-b83ca804f1f7)
+### Leaky Rectified Linear Unit (Leaky ReLU)
 
-The leaky rectified linear unit is a variant of the ReLU function that allows for a small positive slope (normally 0.01) for _z_ values less than zero. While the slope is small, thus making learning slow, this variation eliminates the dead neuron issue present with the ReLU function.
+The [leaky rectified linear unit](https://medium.com/@danqing/a-practical-guide-to-relu-b83ca804f1f7) is a variant of the ReLU function that allows for a small positive slope (normally 0.01) for _z_ values less than zero. While the slope is small, thus making learning slow, this variation eliminates the dead neuron issue present with the ReLU function.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/kpokrass/blog_images/master/leaky_ReLU.png" width="600">
 </p>
 
 
-### [Softmax]( https://medium.com/data-science-bootcamp/understand-the-softmax-function-in-minutes-f3a59641e86d)
+### Softmax
 
-The softmax function is very popular for multiclassification tasks. It outputs a vector of values between 0 and 1, where each element in the vector represents its probability of belonging to a particular class. Thus, the total sum of the output vector will equal 1 and the class represented by the largest element in the vector will be the model’s predicted class. For this reason, the softmax function is typically used in the output layer of neural networks learning multiclassification problems.
+The [softmax function]( https://medium.com/data-science-bootcamp/understand-the-softmax-function-in-minutes-f3a59641e86d) is very popular for multiclassification tasks. It outputs a vector of values between 0 and 1, where each element in the vector represents its probability of belonging to a particular class. Thus, the total sum of the output vector will equal 1 and the class represented by the largest element in the vector will be the model’s predicted class. For this reason, the softmax function is typically used in the output layer of neural networks learning multiclassification problems.
 
 <p align="center">
 <img src="https://deepnotes.io/public/images/softmax.png">
 </p>
 
-### [Swish](https://medium.com/@neuralnets/swish-activation-function-by-google-53e1ea86f820)
+### Swish
 
-The swish activation function was developed by Google in 2017. It has been described as a self-gated function and has shown marginal performance increases over ReLU for computer vision tasks. While the overall performance of this “new kid on the block” is still up for debate, it does address the dead neuron problem present with the ReLU function. However, it is more computationally expensive and may increase training time.
+The [swish activation function](https://medium.com/@neuralnets/swish-activation-function-by-google-53e1ea86f820) was developed by Google in 2017. It has been described as a self-gated function and has shown marginal performance increases over ReLU for computer vision tasks. While the overall performance of this “new kid on the block” is still up for debate, it does address the dead neuron problem present with the ReLU function. Also, it is unique from all other activation functions in that it is non-monotonic (specifically for the region of the function pertaining to _z < 0_). This means its output could decrease in value even though the input is increasing. However, it is more computationally expensive than ReLU and may increase training time.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/kpokrass/blog_images/master/swish.png" width="600">
