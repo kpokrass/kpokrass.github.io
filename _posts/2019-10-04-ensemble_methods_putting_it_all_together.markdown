@@ -5,6 +5,7 @@ date:       2019-10-04 16:23:33 -0400
 permalink:  ensemble_methods_putting_it_all_together
 ---
 
+
 Ensemble methods are one of the most effective classes of machine learning algorithms available to data scientists for supervised learning. As a testament to their power, examples of these algorithms such as Random Forests, Gradient Boosted Models (GBM), or custom stacks of various types of models (meta-ensembles) are routinely seen in the winning solutions for [Kaggle](https://www.kaggle.com/) competitions and the [KDD Cup](https://www.kdd.org/kdd-cup). But what exactly _is_ an ensemble method? How do they work? And what makes them so effective? Understanding the answers to these questions can help data scientists identify situations where ensemble methods would excel and aid in their communication of the results. 
 
 ## What Are Ensemble Methods?
