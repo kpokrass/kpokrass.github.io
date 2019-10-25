@@ -1,10 +1,13 @@
 ---
 layout: post
 title:      "Neural Networks – Optimizers"
-date:       2019-10-25 18:54:25 +0000
+date:       2019-10-25 14:54:26 -0400
 permalink:  neural_networks_optimizers
 ---
 
+<p align="center">
+<img src="https://www.bsi.bund.de/SharedDocs/Bilder/DE/BSI/Themen/Cyber-Sicherheit/SiSyPHuS_Win10.jpg?__blob=normal&v=1">
+</p>
 
 The main goal of any machine learning model is to learn the classification/regression task from the data it was given. For models such as decision trees or random forests, “learning” happens in the form of finding the best way to successively split the data such that information gain is maximized (entropy is minimized) at each split. Neural networks, on the other hand, use an algorithm known as gradient descent to minimize the difference (loss) between the predicted and ground-truth values. As performing gradient descent involves calculating the partial derivative of the cost function with respect to each parameter in that function, it is a very computationally expensive process. This computational expense is also compounded by the massive amount of data neural networks need to achieve peak performance. Thus, many algorithms have been developed to improve upon the standard (stochastic) gradient descent such as Momentum, Root Mean Square Propagation (RMSProp), and Adaptive Moment Estimation (Adam). 
 
